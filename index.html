@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad Kanban</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Vlad Kanban</h1>
+
+    <!-- Form pentru adăugarea unui task nou -->
+    <div id="new-task-form">
+        <input type="text" id="new-task-input" placeholder="Add new task..." />
+        <select id="task-category">
+            <option value="">Select a column</option>
+        </select>
+        <button id="add-task-button">Add Task</button>
+    </div>
+
+    <!-- Form pentru adăugarea unei coloane noi -->
+    <div id="new-column-form">
+        <input type="text" id="new-column-name" placeholder="Column name..." />
+        <input type="color" id="new-column-color" value="#cccccc" />
+        <button id="add-column-button">Add Column</button>
+    </div>
+
+    <div id="kanban-board">
+        <!-- Coloane vor fi generate din JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
